@@ -53,4 +53,11 @@ Rails.application.routes.draw do
   delete '/devices/:device_id', to: 'device#destroy'
 
 
+  delete '/clients/:client_id', to: 'client#destroy'
+
+  post '/clients', to: 'client#create'
+
+  get '/clients', to: 'client#index'
+
+
 end
