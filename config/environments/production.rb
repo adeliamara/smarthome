@@ -84,10 +84,6 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.hosts = [
-    IPAddr.new("0.0.0.0/0"),        # All IPv4 addresses.
-    IPAddr.new("::/0"),             # All IPv6 addresses.
-    "localhost",                    # The localhost reserved domain.
-    ENV["RAILS_DEVELOPMENT_HOSTS"]  # Additional comma-separated hosts for development.
-  ]
+  config.hosts << "smarthome-production.up.railway.app"
+
 end
