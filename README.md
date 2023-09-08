@@ -8,6 +8,7 @@ O objetivo deste projeto é praticar o projeto e implementação de uma API REST
 
 ## Detalhes Técnicos (IMPLEMENTADOS ATE ENTAO)
 
+* **Deploy**: https://smarthome-production.up.railway.app/
 * **Tipo de API:** RESTful
 * **Persistência de dados:** Utilização de DDD Repository, com opção de armazenamento (POR ENQUANTO ESTÁ EM SQLITE)
     - seguindo este padrão: https://engineering.solarisbank.com/the-repository-pattern-in-ruby-with-the-active-record-library-f0445fa282c
@@ -29,6 +30,10 @@ Antes de iniciar o projeto, certifique-se de que você possui todas as dependên
 ## Configuration
 
 Explique qualquer configuração especial que precisa ser feita antes de iniciar o projeto. Isso pode incluir a configuração de variáveis de ambiente, chaves de API ou qualquer outra configuração personalizada.
+
+## Para testar os endpoints com API Contract no Postman
+
+Importe a collection para o postman e teste os endpoints. A {{URI_BASE}} já está definida com o link do deploy.
 
 ## Banco de Dados
 
@@ -65,4 +70,4 @@ rails server
 ```
 Acesse a aplicação em seu navegador em http://localhost:3000.
 
-2. Importe a collection para o postman e teste os endpoints.
+
