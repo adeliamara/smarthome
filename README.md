@@ -32,16 +32,37 @@ Explique qualquer configuração especial que precisa ser feita antes de iniciar
 
 ## Banco de Dados
 
-### Database creation
+1. Clone o repositório:
 
-```bash
-# Crie o banco de dados
-rails db:create
-Database initialization
-Explique como inicializar o banco de dados, se houver necessidade.
+   ```bash
+   git clone https://github.com/adeliamara/smarthome.git
+   ```
+Acesse o diretório do projeto:
+
+   ```bash
+cd smarthome
 ```
 
+Instale as dependências:
+
 ```bash
-# Execute as migrações
+bundle install
+```
+
+Configure o banco de dados em config/database.yml.
+
+Crie o banco de dados e execute as migrações:
+
+```bash
+rails db:create
 rails db:migrate
 ```
+
+Inicie o servidor local:
+
+```bash
+rails server
+```
+Acesse a aplicação em seu navegador em http://localhost:3000.
+
+2. Importe a collection para o postman e teste os endpoints.
